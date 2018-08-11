@@ -338,7 +338,7 @@ with tf.Session() as sess:
         print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: batch_x, y: batch_y}))
 ```
 
-# . GoogleNet演化
+# 五. GoogleNet演化
 
 > Inception Net在Inception V1的基础上，产生了许多其他类型的网络模型，总结如下：
 
