@@ -19,6 +19,8 @@ GoogleNet网络说明
 
 > Inception Net V1结构如图所示，
 
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/4.png)
+
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/2.png)
 
 > Inception Net V1 有22层深，除了最后一层的输出，其中间节点的分类效果也很好。因此在Inception Net V1 中，还使用到了辅助分类节点（auxiliary classifiers），即将中间某一层的输出用作分类，并按一个较小的权重（0.3）加到最终loss中。这样相当于做了模型融合，同时给网络增加了反向传播的梯度信号，也提供了额外的正则化，对于整个Inception Net的训练很有裨益。
