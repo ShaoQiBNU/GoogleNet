@@ -31,7 +31,7 @@ GoogleNet网络说明
 
 # 四. 代码
 
-> 应用Inception V1结构实现MNIST判别，由于MNIST的图像大小为28x28，到第四次pool时，影像已经成为1 x 1 x 832，所以两个辅助分类器的pool的ksize和strides做了调整，代码入下：
+> 应用Inception V1结构实现MNIST判别，由于MNIST的图像大小为28x28，到第四次pool时，影像已经成为1 x 1 x 832，所以两个辅助分类器的pool的ksize和strides做了调整，代码如下：
 
 ```python
 ########## load packages ##########
@@ -336,7 +336,9 @@ with tf.Session() as sess:
         print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: batch_x, y: batch_y}))
 ```
 
-# . GoogleNet发展历程
+# . GoogleNet演化
+
+> Inception Net在Inception V1的基础上，产生了许多其他类型的网络模型，总结如下：
 
 > 1. Inception v1的网络，打破了常规的卷积层串联的模式，将1x1，3x3，5x5的卷积层和3x3的pooling池化层并联组合后concatenate组装在一起的设计思路；
 
