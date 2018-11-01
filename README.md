@@ -315,10 +315,7 @@ with tf.Session() as sess:
 
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/5.png)
 
-![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/6.png)
-
-> 其中，pass through代表不做proj，直接将pool之后的结果输出；由于Inception v2移除了Inception v1在inception层之间的全局pool层，所以当数据由inception 3c ---> inception 4a时，四个分支的stride变为2，inception 4e ---> inception 5a时，四个分支的stride变为2。Inception v2的结构与Inception v1的其他区别在于：
-![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/7.png)
+> 其中，pass through代表不做proj，直接将pool之后的结果输出；由于Inception v2移除了Inception v1在inception层之间的全局pool层，所以当数据由inception 3c ---> inception 4a时，四个分支的stride变为2，inception 4e ---> inception 5a时，四个分支的stride变为2。Inception v2的结构与Inception v1的其他区别见论文。
 
 ### 代码
 
