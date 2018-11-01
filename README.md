@@ -311,7 +311,13 @@ with tf.Session() as sess:
 
 ## (二) Inception V2
 
-> Inception v2的网络在Inception v1的基础上，进行了改进，一方面了加入了BN层（放在激活函数之前，卷积之后），减少了Internal Covariate Shift（内部神经元分布的改变），使每一层的输出都规范化到一个N(0, 1)的高斯，还去除了Dropout、LRN等结构；另外一方面学习VGG用2个3x3的卷积替代inception模块中的5x5卷积，既降低了参数数量，又加速计算。Inception v2的结构如图所示：
+> Inception v2的网络在Inception v1的基础上，进行了改进，一方面了加入了BN层（放在激活函数之前，卷积之后），减少了Internal Covariate Shift（内部神经元分布的改变），使每一层的输出都规范化到一个N(0, 1)的高斯，还去除了Dropout、LRN等结构；另外一方面学习VGG用2个3x3的卷积替代inception模块中的5x5卷积，既降低了参数数量，又加速计算，如图所示：
+
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/6.png)
+
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/7.png)
+
+> Inception v2的结构如图所示：
 
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/5.png)
 
