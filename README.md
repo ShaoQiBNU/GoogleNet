@@ -678,6 +678,7 @@ with tf.Session() as sess:
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/9.png)
 
 ### 各个子模块的结构如下：
+
 #### Stem
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/10.png)
 
