@@ -1906,6 +1906,33 @@ with tf.Session() as sess:
         print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: x_test_batch, y: y_test_batch}))
 ```
 
+#### inception-resnet v2
+
+> inception-resnet v2的网络结构设计如下：
+
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/23.png)
+
+##### 各个子模块的结构如下：
+
+##### Stem
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/24.png)
+
+##### Inception-resnet A
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/25.png)
+
+##### Reduction A
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/26.png)
+
+##### Inception-resnet B
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/27.png)
+
+##### Reduction B
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/28.png)
+
+##### Inception-resnet C
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/29.png)
+
+##### 代码
 
 
 # 四. GoogleNet总结
@@ -1918,5 +1945,4 @@ with tf.Session() as sess:
 
 > 3. Inception v3一个最重要的改进是分解（Factorization），将7x7分解成两个一维的卷积（1x7,7x1），3x3也是一样（1x3,3x1）。这样的好处，既可以加速计算（多余的计算能力可以用来加深网络），又可以将1个conv拆成2个conv，使得网络深度进一步增加，增加了网络的非线性，可以处理更多更丰富的空间特征，增加特征多样性。还有值得注意的地方是网络输入从224x224变为了299x299，更加精细设计了35x35/17x17/8x8的模块；
 
-> 4. Inception v4结合了微软的ResNet，发现ResNet的结构可以极大地加速训练，同时性能也有提升，得到一个Inception-ResNet v2网络，同时还设计了一个更深更优化的Inception v4模型，能达到与Inception-ResNet v2相媲美的性能。
 
