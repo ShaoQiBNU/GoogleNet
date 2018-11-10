@@ -673,31 +673,36 @@ with tf.Session() as sess:
 
 
 ## (四) Inception V4
+
+### Inception v4共有3种结构，其中两种结合了微软的ResNet——Inception-ResNet v1和Inception-ResNet v2网络，具体结构如下：
+
+#### inception v4
+
 > inception v4的网络结构设计如下：
 
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/9.png)
 
-### 各个子模块的结构如下：
+##### 各个子模块的结构如下：
 
-#### Stem
+##### Stem
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/10.png)
 
-#### Inception A
+##### Inception A
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/11.png)
 
-#### Reduction A
+##### Reduction A
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/12.png)
 
-#### Inception B
+##### Inception B
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/13.png)
 
-#### Reduction B
+##### Reduction B
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/14.png)
 
-#### Inception C
+##### Inception C
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/15.png)
 
-### 代码
+##### 代码
 
 ```python
 ########## load packages ##########
@@ -1308,6 +1313,37 @@ with tf.Session() as sess:
         print("Testing Accuracy:", sess.run(accuracy, feed_dict={x: x_test_batch, y: y_test_batch}))
 
 ```
+
+
+#### inception-resnet v1
+
+> inception-resnet v1的网络结构设计如下：
+
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/16.png)
+
+##### 各个子模块的结构如下：
+
+##### Stem
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/17.png)
+
+##### Inception A
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/18.png)
+
+##### Reduction A
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/19.png)
+
+##### Inception B
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/20.png)
+
+##### Reduction B
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/21.png)
+
+##### Inception C
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/22.png)
+
+##### 代码
+
+
 
 # 四. GoogleNet总结
 
