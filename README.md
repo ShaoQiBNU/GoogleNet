@@ -675,22 +675,26 @@ with tf.Session() as sess:
 ## (四) Inception V4
 > inception v4的网络结构设计如下：
 
-![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/5.png)
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/9.png)
 
 ### 各个子模块的结构如下：
 #### Stem
-
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/10.png)
 
 #### Inception A
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/11.png)
 
 #### Reduction A
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/12.png)
 
 #### Inception B
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/13.png)
 
 #### Reduction B
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/14.png)
 
 #### Inception C
-
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/15.png)
 
 ### 代码
 
