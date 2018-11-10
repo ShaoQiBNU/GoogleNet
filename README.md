@@ -1915,7 +1915,7 @@ with tf.Session() as sess:
 ##### 各个子模块的结构如下：
 
 ##### Stem
-![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/24.png)
+![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/3.png)
 
 ##### Inception-resnet A
 ![image](https://github.com/ShaoQiBNU/GoogleNet/blob/master/images/25.png)
